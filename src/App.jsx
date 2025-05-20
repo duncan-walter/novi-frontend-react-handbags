@@ -1,6 +1,8 @@
 import './App.css'
+
 import Button from './components/Button.jsx';
 import Product from './components/Product.jsx';
+import Tile from './components/Tile.jsx';
 
 import Bag1Image from './assets/bag_1.png';
 import Bag2Image from './assets/bag_2.png';
@@ -53,8 +55,8 @@ function App() {
       />
     </main>
     <footer>
-      <section>
-        <h2>THE BRAND</h2>
+      <Tile>
+        <h2>The brand</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur
           praesentium quia sequi similique sunt.
@@ -63,21 +65,21 @@ function App() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur
           praesentium quia sequi similique sunt.
         </p>
-      </section>
-      <section>
+      </Tile>
+      <Tile>
         <img src={Tile1Image} alt="Brand"/>
-      </section>
-      <section>
+      </Tile>
+      <Tile>
         <img src={Tile2Image} alt="Our story"/>
-      </section>
-      <section>
-        <h2>OUR STORY</h2>
+      </Tile>
+      <Tile>
+        <h2>Our story</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eligendi exercitationem illo, labore
           laboriosam nihil omnis praesentium. Aspernatur cum deleniti excepturi itaque, laboriosam nisi rerum sunt. At
           repellendus tenetur veniam!
         </p>
-      </section>
+      </Tile>
     </footer>
   </>)
 }
