@@ -1,4 +1,5 @@
 import './App.css'
+import Button from "./components/Button.jsx";
 
 function App() {
   function logButtonText(e) {
@@ -8,9 +9,9 @@ function App() {
   return (<>
     <h1>Handbags & Purses</h1>
     <nav>
-      <button onClick={logButtonText}>to the collection</button>
-      <button onClick={logButtonText}>shop all bags</button>
-      <button onClick={logButtonText} disabled={true}>pre-order</button>
+      <Button buttonText="to the collection" action={logButtonText} />
+      <Button buttonText="shop all bags" action={logButtonText} />
+      <Button buttonText="pre-order" action={logButtonText} isDisabled={true} />
     </nav>
   </>)
 }
